@@ -4,6 +4,11 @@ import synthtool.languages.node as node
 import logging
 import os
 
+node.owlbot_main(
+  staging_excludes=['package.json', 'README.md', 'src/index.ts', 'src/v2/index.ts', 'tsconfig.json', 'tslint.json'],
+  
+)
+
 logging.basicConfig(level=logging.DEBUG)
 
 AUTOSYNTH_MULTIPLE_COMMITS = True
