@@ -20,7 +20,7 @@
 const bigtable = require('@google-cloud/bigtable');
 
 function main() {
-  const bigtableClient = new bigtable.Bigtable();
+  const bigtableClient = new bigtable.BigtableClient();
 }
 
 main();
